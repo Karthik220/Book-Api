@@ -20,7 +20,7 @@ let Book = [
         numOfPage: 225,
         category: ["fiction","tech","web dev"],
         publication: 1,
-    },
+    }
 ];
 
 let Author = [
@@ -33,7 +33,7 @@ let Author = [
         id:2,
         name: "kaushik",
         books: ["12345ONE"],
-    },
+    }
 ];
 
 let Publication = [
@@ -46,7 +46,7 @@ let Publication = [
         id:1,
         name: "Vickie Publications",
         books: []
-    },
+    }
 ] ;
 
 //Native Javascript 

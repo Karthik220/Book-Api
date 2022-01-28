@@ -46,6 +46,19 @@ Ourapp.get("/book/c/:category",(req,res) => {
     return res.json({book:getBook});
 })
 
+// Route  -/book/a/:authorID
+// Access -Public
+//Method  -GET
+//Params  -authorID
+//Body    -none
+//Des     -to get a list of books based on author
+Ourapp.get("/book/a/:authorID",(req,res) => {
+    const getBook = Database.Book.filter(
+        (authorID) => authorID.authors.includes(parseInt(req.params.authorID))
+    );
+    return res.json({book:getBook});
+})
+
 // Route  -/author
 // Access -Public
 //Method  -GET
