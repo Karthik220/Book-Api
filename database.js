@@ -9,7 +9,7 @@ let Book = [
         pubDate: "2021-07-07",
         numOfPage: 225,
         category: ["fiction","programming","tech","web dev"],
-        publication: 1,
+        publication: 1
     },
     {
         ISBN: "12345Two",
@@ -19,7 +19,7 @@ let Book = [
         pubDate: "2021-07-07",
         numOfPage: 225,
         category: ["fiction","tech","web dev"],
-        publication: 1,
+        publication: 1
     }
 ];
 
@@ -27,12 +27,12 @@ let Author = [
     {
         id:1,
         name: "karthik",
-        books: ["12345ONE","12345Two"],
+        books: ["12345ONE","12345Two"]
     },
     {
         id:2,
         name: "kaushik",
-        books: ["12345ONE"],
+        books: ["12345ONE"]
     }
 ];
 

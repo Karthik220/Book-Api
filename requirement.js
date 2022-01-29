@@ -16,8 +16,8 @@ Publications
  - id               - Number
  - name             - String
  - books            - [Sting]
----- APIs ------
 
+---- APIs ------
 
 Book
  - GET
@@ -39,7 +39,7 @@ Authors
  - GET
     - to get all authors ✅
     - to get specific author -> [Task] ✅
-    - to get list of author based on a book✅
+    - to get list of author based on a book (didnt do requies mongodb)
  - POST
     - to add new author✅
     - to update/add new book

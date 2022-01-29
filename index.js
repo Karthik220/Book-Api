@@ -72,6 +72,7 @@ Ourapp.get("/book/a/:authorID",(req,res) => {
 //Body   -
 //Des   -To add new book
 Ourapp.post("/book/new", (req,res) =>{
+    //directly sending the object 
     console.log(req.body);
     return res.json({message:"Book Added Successfully"});
 });
@@ -98,11 +99,35 @@ Ourapp.get("/author/:authodID", (req,res) =>{
     const getspecifiedAuthor = Database.Author.filter(
         (authorID) => authorID.id === parseInt(req.params.authodID)
         ); 
-     return res.json({author:getspecifiedAuthor});
+        return res.json({author:getspecifiedAuthor});
+})
+
+//3
+//Route  -/author/new
+//Access -Public
+//Method -POST
+//Params -none
+//Des   -To add new author
+Ourapp.post("/author/new", (req,res)=>{
+    //Destructuring newauthor, nested object, entered into the object 
+    const {newauthor} = req.body
+    console.log(newauthor);
+    return res.json({message: "author was added"});
 })
 
 
 
+//Route  -/publication/new
+//Access -Public
+//Method -POST
+//Params -none
+//Des   -To add new publication
+Ourapp.post("/publication/new", (req,res) => {
+    //sending one object, no braces {}
+    const newpublication = req.body;
+    console.log(newpublication);
+    return res.json({message:"publication was added"});
+})
 
 
 Ourapp.listen(4000, ()=>{console.log("Server is running")});
