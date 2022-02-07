@@ -1,5 +1,11 @@
 //Temporary Database 
 
+//Object 
+// You can use double inverted or single inverted commas in js file
+//but in json format, you must be careful 
+//json format can store multiple datas 
+//key will always be a string 
+//the values assigned to it can be different as we have seen in mongo db 
 let Book = [
     {
         ISBN: "12345ONE",
@@ -33,6 +39,11 @@ let Author = [
         id:2,
         name: "kaushik",
         books: ["12345ONE"]
+    },
+    {
+        id:3,
+        name: "Coder",
+        books: []
     }
 ];
 
@@ -43,9 +54,9 @@ let Publication = [
         books: ["12345ONE"]
     },
     {
-        id:1,
+        id:2,
         name: "Vickie Publications",
-        books: []
+        books: ["12345Two"]
     }
 ] ;
 
