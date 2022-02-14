@@ -21,45 +21,44 @@ Publications
 
 Book
  - GET
-    - to get all books ✅
-    - to get specific books ✅
-    - to get a list of books based on category ✅
-    - to get a list of books based on author -> [Task] ✅
+    1) to get all books ✅
+    2) to get specific books ✅
+    3) to get a list of books based on category ✅
+    4) to get a list of books based on author -> [Task] ✅
  - POST
-    - to add new book✅
+    5) to add new book✅
  - PUT
-    - to update book details✅
-    - to update/add new author✅
+    6) to update book details✅
+    7) to update/add new author✅
  - DELETE
-    - delete a book ✅
-    - delete an author from the book✅
+    8) delete a book ✅
+    9) delete an author from the book✅
 
 
 Authors
  - GET
-    - to get all authors ✅
-    - to get specific author -> [Task] ✅
-    - to get list of author based on a book (didnt do requies mongodb)
+    1) to get all authors ✅
+    2) to get specific author -> [Task] ✅
+    3) to get list of author based on a book
  - POST
-    - to add new author✅
-    - to update/add new book
+    4) to add new author✅
  - PUT
-    - update author details✅
+    5) update author's name✅
  - DELETE
-    - delete an author✅
+    6) delete an author✅
 
     
 Publication
  - GET
-    - to get all publication -> [Task] ✅
-    - to get specific publication -> [Task] ✅
-    - to get a list of publication based on a book. -> [Task] ✅
+    1) to get all publication -> [Task] ✅
+    2) to get specific publication -> [Task] ✅
+    3) to get a list of publication based on a book. -> [Task] ✅
  - POST
-    - Add new publication✅
+    4) Add new publication✅
  - PUT
-    - update publication ✅
-    - to update/add new book✅
+    5) update publication ✅
+    6) to update/add new book✅
  - DELETE
-    - delete a book from publication✅
-    - delete a publication✅
+    7) delete a publication✅
+    8) delete a book from publication✅
 */
