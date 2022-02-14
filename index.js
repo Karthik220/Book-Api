@@ -29,7 +29,7 @@ Ourapp.use("/publication", Publications);
 
 
 Ourapp.get("/", (request,response)=> {
-    response.json({message: "Welcome to Book Api"});
+    response.send("Welcome to Book Api");
 });
 
 
