@@ -33,4 +33,6 @@ Ourapp.get("/", (request,response)=> {
 });
 
 
-Ourapp.listen(4000, ()=>{console.log("Server is running")});
+const port = process.env.PORT || 4000;
+
+Ourapp.listen(port, ()=>{console.log("Server is running")});
