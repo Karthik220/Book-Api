@@ -111,7 +111,36 @@ Router.put("/updateName/:id", async (req,res) => {
     return res.json({ author: newAuthorData })
 })
 
-//6 
+//6
+//Route  -/author/update/:id
+//Access -Public
+//Method -PUT
+//Params -id
+//Des   -To update the author id
+//Body  -None
+Router.put("/update/:id", async(req,res)=>{
+    const {newAuthorId} = req.body;
+
+    const newDataAuthor = await Author.findOneAndUpdate(
+        {
+            id: parseInt(req.params.id)
+        },
+
+        {
+            $set:{
+                id: newAuthorId
+            }
+        },
+
+        {
+            new: true
+        }
+    )
+    return res.json({message: "Author id updated"})
+})
+
+
+//7
 //Route  -/author/delete/:id
 //Access -Public
 //Method -DELETE
