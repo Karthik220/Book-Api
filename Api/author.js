@@ -96,9 +96,11 @@ Router.put("/updateName/:id", async (req,res) => {
         {
             id: parseInt(req.params.id)
         },
+        
         {
             name: updateAuthorname.name
         },
+
         {
             new: true
         }
