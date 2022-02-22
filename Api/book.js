@@ -91,12 +91,12 @@ Router.post("/new", async (req,res) =>{
         const {newBook} = req.body;
  
         await Book.create(newBook);
- 
-        return res.json({message:"Book Added to the database"})
+        
+        return res.json({message:"Book Added to the database"});
     }catch(error){
         return res.json({error:error.message})
     }
- });
+});
 
 //6
 //Route  -/book/updateTitle/:isbn

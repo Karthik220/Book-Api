@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
+//Connection to Database
 mongoose.connect(
 process.env.MONGO_URL,
         {
